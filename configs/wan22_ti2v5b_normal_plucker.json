@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "representation": "normal_plucker",
+  "backend_root": "../third_party/DiffSynth-Studio",
+  "hand_mesh_faces_path": "../assets/hand_mesh_faces.txt",
+  "control": {
+    "in_dim": 48,
+    "attr_space": "world",
+    "channel_order": [
+      "hand_plucker_world",
+      "camera_plucker"
+    ]
+  },
+  "models": {
+    "text_encoder": "../models/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth",
+    "tokenizer": "../models/Wan2.2-TI2V-5B/google/umt5-xxl",
+    "vae": "../models/Wan2.2-TI2V-5B/Wan2.2_VAE.pth",
+    "single": {
+      "source_shards": [
+        "../models/Wan2.2-TI2V-5B/diffusion_pytorch_model-00001-of-00003.safetensors",
+        "../models/Wan2.2-TI2V-5B/diffusion_pytorch_model-00002-of-00003.safetensors",
+        "../models/Wan2.2-TI2V-5B/diffusion_pytorch_model-00003-of-00003.safetensors"
+      ],
+      "adapter": "../models/initialized/wan22_ti2v5b/single.safetensors",
+      "min_timestep_boundary": 0.0,
+      "max_timestep_boundary": 1.0
+    }
+  },
+  "data": {
+    "metadata": "../examples/egovid/train.csv"
+  },
+  "training": {
+    "output_root": "../outputs/wan22_ti2v5b/normal_plucker",
+    "height": 480,
+    "width": 640,
+    "num_frames": 81,
+    "learning_rate": 0.0001,
+    "num_epochs": 4,
+    "dataset_num_workers": 16,
+    "lora_rank": 32,
+    "use_gradient_checkpointing": true
+  },
+  "inference": {
+    "video": "../examples/egovid/annotations/video.mp4",
+    "cam_pose": "../examples/egovid/annotations/cam_pose.npy",
+    "hand_pose": "../examples/egovid/annotations/hand_pose.npy",
+    "camera_intrinsics": "../examples/egovid/annotations/camera_intrinsics.npy",
+    "prompt": "A first-person view of hands interacting with an object.",
+    "negative_prompt": "",
+    "output": "../outputs/wan22_ti2v5b/normal_plucker/sample.mp4",
+    "original_width": 720,
+    "original_height": 540,
+    "height": 480,
+    "width": 640,
+    "num_frames": 81,
+    "seed": 0,
+    "cfg_scale": [
+      1.0,
+      1.0
+    ],
+    "fps": 15,
+    "tiled": true,
+    "device": "cuda",
+    "checkpoint": "../checkpoints/sft/wan22_ti2v5b/normal_plucker/single.safetensors",
+    "metadata": "../examples/egovid/train.csv",
+    "output_dir": "../outputs/wan22_ti2v5b/normal_plucker/eval",
+    "output_layout": "flat",
+    "comparison": false
+  },
+  "model_type": "wan2.2-ti2v-5b"
+}

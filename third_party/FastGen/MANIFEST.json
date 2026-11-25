@@ -1,0 +1,106 @@
+{
+  "upstream": "https://github.com/NVlabs/FastGen.git",
+  "revision": "f7d845629b00c75527fd04d8ce66392c363b1fbb",
+  "license": "Apache-2.0",
+  "scope": [
+    "fastgen.methods.model",
+    "fastgen.methods.common_loss",
+    "fastgen.methods.fine_tuning.sft",
+    "fastgen.methods.knowledge_distillation.KD",
+    "fastgen.methods.distribution_matching.dmd2",
+    "fastgen.methods.distribution_matching.causvid",
+    "fastgen.methods.distribution_matching.self_forcing",
+    "fastgen.networks.network",
+    "fastgen.networks.noise_schedule",
+    "fastgen.networks.causal_utils",
+    "fastgen.configs.opt",
+    "fastgen.utils"
+  ],
+  "excluded": [
+    "Wan model implementations (HandsOnWorld provides the canonical shared model)",
+    "unrelated architectures and training methods",
+    "S3 checkpoint backends",
+    "generic callbacks, trainer, and evaluators"
+  ],
+  "modifications": [
+    "Curated method and utility dependency closure; removed unrelated architectures, services, and optional imports.",
+    "HandsOnWorld owns the shared Wan models, control/checkpoint bridge, data preparation, distributed launcher, and checkpoint lifecycle."
+  ],
+  "files": {
+    "fastgen/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/configs/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/configs/opt.py": {
+      "sha256": "41fc1741bc51fd19c6bc420c8729c751183ff43f357d704d8b1342ba393d46e1"
+    },
+    "fastgen/methods/__init__.py": {
+      "sha256": "e6a4248fb594436d57edacf564c52511fcac97be4adfd6f62be9d79ada54843b"
+    },
+    "fastgen/methods/common_loss.py": {
+      "sha256": "60d93dc2263c208aff5769c95ad4abf7d96bf0a7f209ae973f195a4666c74b51"
+    },
+    "fastgen/methods/distribution_matching/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/methods/distribution_matching/causvid.py": {
+      "sha256": "20ca4187146590bd27670b00ef7d08694772121576c5d9586e11b9e588120b3c"
+    },
+    "fastgen/methods/distribution_matching/dmd2.py": {
+      "sha256": "dfcbb18ff8429e792ec9991457050fce1a7dd37ba3041d0febc3b18930bc01df"
+    },
+    "fastgen/methods/distribution_matching/self_forcing.py": {
+      "sha256": "fe735c8dd98e5806db3cad0ef3478989183350a7cd441ec5dff4a12bee25d9d1"
+    },
+    "fastgen/methods/fine_tuning/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/methods/fine_tuning/sft.py": {
+      "sha256": "d8d589f9a92227ebe5e22754e1f6506ce46a478377c2625cbdee1a4d7af6a41d"
+    },
+    "fastgen/methods/knowledge_distillation/KD.py": {
+      "sha256": "6101b0b473e572145692bdb83ce46e856e1c8e31fdceef7b9c6a9ed71ebf1183"
+    },
+    "fastgen/methods/knowledge_distillation/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/methods/model.py": {
+      "sha256": "5021a8a27b059fb6e6b9c97b5c8d60bece14ffcd778a695ae1950a4f1a384c06"
+    },
+    "fastgen/networks/__init__.py": {
+      "sha256": "39b67a3543de12fbe919327958818a53222b223688ef8ece33a12bc1e46d1f14"
+    },
+    "fastgen/networks/causal_utils.py": {
+      "sha256": "f2b8e36bf9d0a10acabe8c0779d8fd1c1e9880a2b667e67cc17910f6f26524bd"
+    },
+    "fastgen/networks/network.py": {
+      "sha256": "dd8b2bb4538e2a07a3056882c58ed918812ed82fab14cb960edb148535666e81"
+    },
+    "fastgen/networks/noise_schedule.py": {
+      "sha256": "859c1238c3d98e37b8219314a3698f84dba9b75104d35f579a79a8c04a56fe83"
+    },
+    "fastgen/utils/__init__.py": {
+      "sha256": "c9c5e4b1357b5dc1a11b929624d9ef52fff712f0154fd04abc0d3ddc379b6181"
+    },
+    "fastgen/utils/basic_utils.py": {
+      "sha256": "8b9d73197419630174f676d845013cd21202dd3d43cb1939a71ebe5ef0690adc"
+    },
+    "fastgen/utils/distributed/__init__.py": {
+      "sha256": "e2f8c63dbb2588c421262a5428220aad59273d857ec6148f94704887564f4f91"
+    },
+    "fastgen/utils/global_vars.py": {
+      "sha256": "41eda97bb52f29bddc090e291b3b8eec73a4603206dc4540bb3c1cbb966b411d"
+    },
+    "fastgen/utils/logging_utils.py": {
+      "sha256": "236242fdc3abac26a330effe5d7119afece9d56820958e757aa91f1d1f95cccf"
+    },
+    "fastgen/utils/lr_scheduler.py": {
+      "sha256": "2cb67f41bcd15d3f24a19b0b6721ec46671f129cad02a842cecbc2a96846cbbb"
+    },
+    "fastgen/utils/registry.py": {
+      "sha256": "d0d005bc8b541034a9f1444355597604b1119659a96bfd6c2171d5047f029f18"
+    }
+  }
+}

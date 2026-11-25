@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "base_config": "../wan21_i2v14b_normal_plucker.json",
+  "distillation": {
+    "teacher_checkpoint": "../../outputs/wan21_i2v14b/normal_plucker/single/epoch-1.safetensors",
+    "cache_dir": "../../data/distillation/wan21_i2v14b/normal_plucker",
+    "ode_dir": "../../data/distillation/wan21_i2v14b/normal_plucker_ode",
+    "output_root": "../../outputs/distillation/wan21_i2v14b/normal_plucker",
+    "sharding_strategy": "full",
+    "storage_dtype": "float32",
+    "save_optimizer": true,
+    "chunk_size": 4,
+    "fixed_first_frame": true,
+    "steps": 4,
+    "schedule_shift": 5,
+    "iterations": 3000,
+    "save_every": 1000,
+    "guidance_scale": 1,
+    "student_update_freq": 6,
+    "lr": 2e-06,
+    "fake_score_lr": 4e-07,
+    "streaming_student_backward": true,
+    "stages": {
+      "causal_sft": {
+        "lr": 1e-05,
+        "guidance_scale": 1
+      },
+      "kd": {
+        "lr": 1e-05
+      }
+    }
+  },
+  "inference": {
+    "seed": 123,
+    "metadata": "../../examples/egovid/train.csv",
+    "output_dir": "../../outputs/distillation/wan21_i2v14b/normal_plucker/egovid_val",
+    "output_layout": "flat",
+    "checkpoint": "../../checkpoints/distillation/wan21_i2v14b/normal_plucker"
+  }
+}

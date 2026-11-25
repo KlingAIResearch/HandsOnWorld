@@ -1,0 +1,704 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/modelscope/DiffSynth-Studio",
+  "upstream_commit": "bfaaf12bf41bb573336572e8c90cd0d5b3361f7c",
+  "distribution": "vendored-source-snapshot",
+  "files": {
+    "LICENSE": {
+      "sha256": "d43b96112d60d83595395649e61c6bc215f568052a979320489556c6c1262eb1",
+      "source_sha256": "d43b96112d60d83595395649e61c6bc215f568052a979320489556c6c1262eb1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "UPSTREAM.md": {
+      "sha256": "59349a2001bc0a66a7ac537fa3ef3be1dbe966cccd4ae8cb7fe7533ff097f854",
+      "source_sha256": null,
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": true
+    },
+    "diffsynth/__init__.py": {
+      "sha256": "2b490dcb6e959ba03ed55e65493de2972eb256c34b51b8aa93a0190c59b69c92",
+      "source_sha256": "2b490dcb6e959ba03ed55e65493de2972eb256c34b51b8aa93a0190c59b69c92",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/configs/__init__.py": {
+      "sha256": "1453aa3d029724c18c36e381f2e973af85026f3078c28630288af1f020acc182",
+      "source_sha256": "1453aa3d029724c18c36e381f2e973af85026f3078c28630288af1f020acc182",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/configs/model_configs.py": {
+      "sha256": "e4e6d6ce5d2545dad1096506c6c3d80cd8f9ae01b3fad45aaff274642a4f2ca7",
+      "source_sha256": "a12a1f6714c37a4a1dc1937ec9dfdb3350626ede8dcf22201a336c46ab5cf96f",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/configs/vram_management_module_maps.py": {
+      "sha256": "9583f6e31a407d39022a87b778264a3d1b7ecff04d4ea7c819dae42192012f00",
+      "source_sha256": "9583f6e31a407d39022a87b778264a3d1b7ecff04d4ea7c819dae42192012f00",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/__init__.py": {
+      "sha256": "35d0536f78046eaaea388d93d9c5038ff399fb96d5f0f2f3af2c1d2372c75e12",
+      "source_sha256": "35d0536f78046eaaea388d93d9c5038ff399fb96d5f0f2f3af2c1d2372c75e12",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/attention/__init__.py": {
+      "sha256": "558e2a638ecbd3b7287bb9ab74d0e7e70b098da59bb8127163a494c39ec24190",
+      "source_sha256": "558e2a638ecbd3b7287bb9ab74d0e7e70b098da59bb8127163a494c39ec24190",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/attention/attention.py": {
+      "sha256": "1b55a91812b4e82b6b0ba9c7f46036231acca3234a0b6a105ed210954508e2e4",
+      "source_sha256": "1b55a91812b4e82b6b0ba9c7f46036231acca3234a0b6a105ed210954508e2e4",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/data/__init__.py": {
+      "sha256": "9118710b2ca2e2659418f0d55a17f95ab71fb6e2d32c49fc58ad69a5f710823a",
+      "source_sha256": "9118710b2ca2e2659418f0d55a17f95ab71fb6e2d32c49fc58ad69a5f710823a",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/data/operators.py": {
+      "sha256": "0235bebbedeb60651c09dc18387e2ba1e0b7e38a8cda3384c04c51605a8fc3ec",
+      "source_sha256": "e589f659522ccb1503d608c976d3bcf0d0afb971bf4671be39b6e1f3f2935c83",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/core/data/unified_dataset.py": {
+      "sha256": "ce8635d7a24218041e6e92ebafb434d8bed75c1768b121aee727c913e70a675c",
+      "source_sha256": "81ab415dc261175b4cf6e2dea78218fba2a0a23b1542bdedf78ef9561a01effb",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/core/device/__init__.py": {
+      "sha256": "45d936018d1f1e65c2fc53ffe0def4992b743315c5ce37437d1c0d7f1dcdeb86",
+      "source_sha256": "45d936018d1f1e65c2fc53ffe0def4992b743315c5ce37437d1c0d7f1dcdeb86",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/device/npu_compatible_device.py": {
+      "sha256": "f58a8746443e2558629c2d214a1e8f0edca3b7344b280e48239abfd6938da75f",
+      "source_sha256": "f58a8746443e2558629c2d214a1e8f0edca3b7344b280e48239abfd6938da75f",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/gradient/__init__.py": {
+      "sha256": "e8db9f67a95741bcb4619b0cf8392152b9204ba16308b4dc7af943d8b7f22999",
+      "source_sha256": "e8db9f67a95741bcb4619b0cf8392152b9204ba16308b4dc7af943d8b7f22999",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/gradient/gradient_checkpoint.py": {
+      "sha256": "5c641446c35fa726f81a2ddd86549e0a05ab89ff730faccab7bb440a33eec874",
+      "source_sha256": "5c641446c35fa726f81a2ddd86549e0a05ab89ff730faccab7bb440a33eec874",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/loader/__init__.py": {
+      "sha256": "f678e318bd3ae323a7878c644911afa26d18758effff7cca37ecc695d1cdaf52",
+      "source_sha256": "f678e318bd3ae323a7878c644911afa26d18758effff7cca37ecc695d1cdaf52",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/loader/config.py": {
+      "sha256": "ac1a74e39a0f23cbb6fead85eb780af314d8285023176d96e2063d8026dce9d1",
+      "source_sha256": "ac1a74e39a0f23cbb6fead85eb780af314d8285023176d96e2063d8026dce9d1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/loader/file.py": {
+      "sha256": "78f48d4d00bbbfc361603e0ddb13628a5fe831d3ccec8d72982333614751ab8e",
+      "source_sha256": "78f48d4d00bbbfc361603e0ddb13628a5fe831d3ccec8d72982333614751ab8e",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/loader/model.py": {
+      "sha256": "f41350029386d8f25fd3f23053f68adb3bf92ce2068dfa489521d115cb71edc0",
+      "source_sha256": "f41350029386d8f25fd3f23053f68adb3bf92ce2068dfa489521d115cb71edc0",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/vram/__init__.py": {
+      "sha256": "3fc422826dd95a5f058ff5bec9d8b48e883b641ef0f5e32010743394002bb5f5",
+      "source_sha256": "3fc422826dd95a5f058ff5bec9d8b48e883b641ef0f5e32010743394002bb5f5",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/vram/disk_map.py": {
+      "sha256": "dc01de940384ca36a94c5b8f27306a91a517249e076437270407cb2fafaed91f",
+      "source_sha256": "dc01de940384ca36a94c5b8f27306a91a517249e076437270407cb2fafaed91f",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/vram/initialization.py": {
+      "sha256": "a5541a038db28b2290e0bc1078ed3b78d1f45db84ce66a3d6b46ea68b98bbb22",
+      "source_sha256": "a5541a038db28b2290e0bc1078ed3b78d1f45db84ce66a3d6b46ea68b98bbb22",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/core/vram/layers.py": {
+      "sha256": "c2889f80e2c1c1f80c7ab6cc4225b3b4fb79399e224ca307e33acc88f1869667",
+      "source_sha256": "7a52fe7d1d6741eb4a92f01c13df75e5817fcaf72c73391c21debdeba7c0b73f",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/__init__.py": {
+      "sha256": "8a300ffaa589c28ee5238b44ed1121655a072c270bdbbd9dde77481b94e6d319",
+      "source_sha256": "8a300ffaa589c28ee5238b44ed1121655a072c270bdbbd9dde77481b94e6d319",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/diffusion/base_pipeline.py": {
+      "sha256": "6b3df868ca8cce136d55760128b704bd744ca9fba7702720fc5cda64ba4e769e",
+      "source_sha256": "68f5a14e5fac45d93a515e1845dbc5bc3d7b08b60c57e8669744942d8cd2cd44",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/flow_match.py": {
+      "sha256": "de91b7f71773f1a3b0ee7cfd099c2c6559493644a9f8ca2b911394f3d0a67a1b",
+      "source_sha256": "8f755d1b5859a646e9467b877c28d785e55c6489cd20d487a717c1a7fcdb9d2c",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/logger.py": {
+      "sha256": "1207090b8e7c8aa20ded872d4d79bba4dd0d7a46d044e0e11ebcbfc4535efa2c",
+      "source_sha256": "60c2cb0a955f0fd1a164655d8d674af4d4ee754be588f502efa8da1016ee2c92",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/loss.py": {
+      "sha256": "4833298e25966980ed02d028d7994be471be7f95155e792b52fa6f61965be0c0",
+      "source_sha256": "c315224183939559aa3f318ec907cd5f12e22ae4f117b54f5b416c8a294eddbb",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/parsers.py": {
+      "sha256": "deac8e7a639b01fe68c4b3b373a813cf797bdd6febf3d1216c8fc10449c27ecd",
+      "source_sha256": "b04e3d641da1bcba2e4ca1d2162dfd4cbcb2750151d82cd7ab8a35bc27a19c44",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/runner.py": {
+      "sha256": "c4150cef83f7bca3d6cd35386dce7367a809a9a8b48a55ade89d19cdca857a33",
+      "source_sha256": "36f90f5285fd6f55514043cafdf12be083d735c851cccd30f2be032d7e0a1599",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/diffusion/training_module.py": {
+      "sha256": "a730df0b799ab432e983af44092401d1db5b1b2cf77633ac237553954862474b",
+      "source_sha256": "bac41eb37537218ca9aac3e2f9b0bd88a529206836a8df8e1c0d00edf63a00ee",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/models/dinov3_image_encoder.py": {
+      "sha256": "ffb222f9d3dc1c165fb016dc6dc0718fd88d73b9ea44f0af64ce444759639173",
+      "source_sha256": "ffb222f9d3dc1c165fb016dc6dc0718fd88d73b9ea44f0af64ce444759639173",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux2_dit.py": {
+      "sha256": "aebdda1944c80373785c05bb1f4c43d03284e1ea43b5589de524f09e4eaea5b8",
+      "source_sha256": "aebdda1944c80373785c05bb1f4c43d03284e1ea43b5589de524f09e4eaea5b8",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux2_text_encoder.py": {
+      "sha256": "25060315645c5a47d33a72187830c10afb7d26c5b437af5c77871efa480ff8e3",
+      "source_sha256": "25060315645c5a47d33a72187830c10afb7d26c5b437af5c77871efa480ff8e3",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux2_vae.py": {
+      "sha256": "ca43f112c4af50fe6fc6eb0da2fdaca9ddb45b7beded7ad2e4fbf7dc3d79fdf8",
+      "source_sha256": "ca43f112c4af50fe6fc6eb0da2fdaca9ddb45b7beded7ad2e4fbf7dc3d79fdf8",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_controlnet.py": {
+      "sha256": "79525c9112139e6097dfcbca15f888c29ed5581d6cee907cfa0ba38b1a7b5128",
+      "source_sha256": "79525c9112139e6097dfcbca15f888c29ed5581d6cee907cfa0ba38b1a7b5128",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_dit.py": {
+      "sha256": "97ecc71a953c51abf7ece89a4757e163b80f1c72d2b4b194675b79f2a2d1cecd",
+      "source_sha256": "97ecc71a953c51abf7ece89a4757e163b80f1c72d2b4b194675b79f2a2d1cecd",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_infiniteyou.py": {
+      "sha256": "4566e1eda32b5641d5c3046b9466e2c3e4a4d4b4602033509634e8a8802f24a1",
+      "source_sha256": "4566e1eda32b5641d5c3046b9466e2c3e4a4d4b4602033509634e8a8802f24a1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_ipadapter.py": {
+      "sha256": "c62c52a0b90bf5c7e5ed7a07a907efbd4bbcd8c2da27218462d5acab1e7ec3d3",
+      "source_sha256": "c62c52a0b90bf5c7e5ed7a07a907efbd4bbcd8c2da27218462d5acab1e7ec3d3",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_lora_encoder.py": {
+      "sha256": "c5a70d6fe2c91f5ce4306d2d1f4bb3cfbbe1fb7748458b1cd519506da0298767",
+      "source_sha256": "c5a70d6fe2c91f5ce4306d2d1f4bb3cfbbe1fb7748458b1cd519506da0298767",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_lora_patcher.py": {
+      "sha256": "776caf9e51c91ecadf0d0a2a440e5c389e2d5ded7b1c9503cad33781b69cc8f2",
+      "source_sha256": "776caf9e51c91ecadf0d0a2a440e5c389e2d5ded7b1c9503cad33781b69cc8f2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_text_encoder_clip.py": {
+      "sha256": "a40923281e05cbd1dbdc40a2bccc349fbd9cebf027f31c63200bc8ac30b42e88",
+      "source_sha256": "a40923281e05cbd1dbdc40a2bccc349fbd9cebf027f31c63200bc8ac30b42e88",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_text_encoder_t5.py": {
+      "sha256": "5523154ed1b4b1573b4a3488164207b40d8ba37206a4932fec793688c2381d7e",
+      "source_sha256": "5523154ed1b4b1573b4a3488164207b40d8ba37206a4932fec793688c2381d7e",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_vae.py": {
+      "sha256": "64449ce7b6a31717d234a205a46fcc067de256ad9bcbc5f789c78c8dc574326c",
+      "source_sha256": "64449ce7b6a31717d234a205a46fcc067de256ad9bcbc5f789c78c8dc574326c",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/flux_value_control.py": {
+      "sha256": "bcb43964b74bc107c2cda30b03956d1868e1c6e3f2b215723cb9bca0d641b173",
+      "source_sha256": "bcb43964b74bc107c2cda30b03956d1868e1c6e3f2b215723cb9bca0d641b173",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/general_modules.py": {
+      "sha256": "697c02e932a1abdf7c62b88a6b4ad9a70b124da6b6e0e6a4166e9afbe3cafa11",
+      "source_sha256": "697c02e932a1abdf7c62b88a6b4ad9a70b124da6b6e0e6a4166e9afbe3cafa11",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/longcat_video_dit.py": {
+      "sha256": "3d82e4dbaa8dcc6dc09f0861865128c458989c8d976bccc04ed1bd6cff357b63",
+      "source_sha256": "3d82e4dbaa8dcc6dc09f0861865128c458989c8d976bccc04ed1bd6cff357b63",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/model_loader.py": {
+      "sha256": "aec275a7030d70310e1b6f8898055cfc932a4b13cd60d4e3de0f88e4890a22c1",
+      "source_sha256": "aec275a7030d70310e1b6f8898055cfc932a4b13cd60d4e3de0f88e4890a22c1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/nexus_gen.py": {
+      "sha256": "3a6da344ed27e80ae8b05ce8a0257ad9b06f263ba95ad93432723183b3b51daa",
+      "source_sha256": "3a6da344ed27e80ae8b05ce8a0257ad9b06f263ba95ad93432723183b3b51daa",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/nexus_gen_ar_model.py": {
+      "sha256": "d30ce70b39280ad1ba21661cfffb4ec7bbd44181b58a17d2c88c626fb302b930",
+      "source_sha256": "d30ce70b39280ad1ba21661cfffb4ec7bbd44181b58a17d2c88c626fb302b930",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/nexus_gen_projector.py": {
+      "sha256": "1e5853581a017c24fabea707783b825f4f4464eb28867f6b4c48bedb354b7427",
+      "source_sha256": "1e5853581a017c24fabea707783b825f4f4464eb28867f6b4c48bedb354b7427",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/qwen_image_controlnet.py": {
+      "sha256": "02302a06c05a0a66a6ac227f52af378b898cf22116b4edcca43c67ef7b08b1e2",
+      "source_sha256": "02302a06c05a0a66a6ac227f52af378b898cf22116b4edcca43c67ef7b08b1e2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/qwen_image_dit.py": {
+      "sha256": "8d515ae7855fcc6d0f6ec2b7a488e2803e64df26dd2bc741c68b75786079d29f",
+      "source_sha256": "8d515ae7855fcc6d0f6ec2b7a488e2803e64df26dd2bc741c68b75786079d29f",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/qwen_image_image2lora.py": {
+      "sha256": "c2de06f29009b64549adca69704c7577b4ad991891d7352a1717d7b76a895f97",
+      "source_sha256": "c2de06f29009b64549adca69704c7577b4ad991891d7352a1717d7b76a895f97",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/qwen_image_text_encoder.py": {
+      "sha256": "b88930079597938ef50641e2a02fe8af98a68761c35c5e659f8c9d0e6a2de5e2",
+      "source_sha256": "b88930079597938ef50641e2a02fe8af98a68761c35c5e659f8c9d0e6a2de5e2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/qwen_image_vae.py": {
+      "sha256": "daee4e1b69dd8664b37508d155b2e0881b6bafe4937cdd069e84bd1e7dae288c",
+      "source_sha256": "daee4e1b69dd8664b37508d155b2e0881b6bafe4937cdd069e84bd1e7dae288c",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/sd_text_encoder.py": {
+      "sha256": "cec55e832318ffb84a5b451a64776236666134a2031955101096db88eaff7407",
+      "source_sha256": "cec55e832318ffb84a5b451a64776236666134a2031955101096db88eaff7407",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/siglip2_image_encoder.py": {
+      "sha256": "5002eecf35de8ec38537b070e3cbb77fb6813b5f59ab2383ed99eecb83178414",
+      "source_sha256": "5002eecf35de8ec38537b070e3cbb77fb6813b5f59ab2383ed99eecb83178414",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/step1x_connector.py": {
+      "sha256": "463eda018a395ed7a912ff12802444d80b90d5de531b0c4a868c2639754870f8",
+      "source_sha256": "463eda018a395ed7a912ff12802444d80b90d5de531b0c4a868c2639754870f8",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/step1x_text_encoder.py": {
+      "sha256": "cee8181932f12cd42518a1b6ba02cf3e5a3fb3a82acc8d1b42abb4af644ceedc",
+      "source_sha256": "cee8181932f12cd42518a1b6ba02cf3e5a3fb3a82acc8d1b42abb4af644ceedc",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_animate_adapter.py": {
+      "sha256": "3b0a3fda39a1b7c76b7f4ce87428054bc6b43eb990bf2520f09e207ee88563a1",
+      "source_sha256": "3b0a3fda39a1b7c76b7f4ce87428054bc6b43eb990bf2520f09e207ee88563a1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_camera_controller.py": {
+      "sha256": "91a0488b7a5e4823842cd012e3e9915137f738376f5cfffc6f742b983b5429fe",
+      "source_sha256": "5f5578756158ad130faef543be4e2cda8007c21dffaaec8356d9d0314f170baf",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/models/wan_video_dit.py": {
+      "sha256": "ba21d16ba0b74cc1a94cf3645fd67561761016dccda28937532d10cc2dfa18f8",
+      "source_sha256": "c58f1d80462b7903ef38b51a44365ee4cda2d039dcd52e55ce66ce28c13648ab",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/models/wan_video_dit_s2v.py": {
+      "sha256": "26f3ce3bdcc13499ccb66a1b5aa99090f40e84af9803b83ea8299ed8f80b4e64",
+      "source_sha256": "26f3ce3bdcc13499ccb66a1b5aa99090f40e84af9803b83ea8299ed8f80b4e64",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_image_encoder.py": {
+      "sha256": "77a6f63125512975486c9af8c795350c7b2799062887e424e8d589f366135b3d",
+      "source_sha256": "77a6f63125512975486c9af8c795350c7b2799062887e424e8d589f366135b3d",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_mot.py": {
+      "sha256": "5b1984175202c6fda81645716b0cd475b916d6e13aab3ab01156e8973c5155bc",
+      "source_sha256": "5b1984175202c6fda81645716b0cd475b916d6e13aab3ab01156e8973c5155bc",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_motion_controller.py": {
+      "sha256": "15c2288c1e64a08d24d5e231a33cdf40197ede221231f88ae9ad2f1a43772af1",
+      "source_sha256": "15c2288c1e64a08d24d5e231a33cdf40197ede221231f88ae9ad2f1a43772af1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_pose_controller.py": {
+      "sha256": "12487736897d84711a2ce8bdcf22ef20b2d91065cf9e1b0362dd9bc4e7b80104",
+      "source_sha256": "ae4de7878c9bd618f7c0b4838a084b1635c2a57898deb10ce22dd1ecfe8fabef",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/models/wan_video_text_encoder.py": {
+      "sha256": "ef77408e83076f149df546212a026f17d4cd83cdeaaf70744560b2a98752c2df",
+      "source_sha256": "ef77408e83076f149df546212a026f17d4cd83cdeaaf70744560b2a98752c2df",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_vace.py": {
+      "sha256": "af06bdeafab0a930840b34f3c2ba9323886c56c2d368390ea4bb57dfa97f5ab5",
+      "source_sha256": "af06bdeafab0a930840b34f3c2ba9323886c56c2d368390ea4bb57dfa97f5ab5",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wan_video_vae.py": {
+      "sha256": "1678b8e66311a9cf08f95df980b00dc84c497cee7bb99d13146388415967b8ae",
+      "source_sha256": "1678b8e66311a9cf08f95df980b00dc84c497cee7bb99d13146388415967b8ae",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/wav2vec.py": {
+      "sha256": "bab70b67d98d8c335d8b23622517d09e1acb52b88cbde6129386917c4f3b67ef",
+      "source_sha256": "bab70b67d98d8c335d8b23622517d09e1acb52b88cbde6129386917c4f3b67ef",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/z_image_dit.py": {
+      "sha256": "cdf27d6740baf2ceb8cc933fc8bd38839af1ecf1b822f6d95ea730250ea4a52d",
+      "source_sha256": "cdf27d6740baf2ceb8cc933fc8bd38839af1ecf1b822f6d95ea730250ea4a52d",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/models/z_image_text_encoder.py": {
+      "sha256": "93213b8e979f67d0319e642b60afc21cfef90fb0241f8f70e98063c356521b58",
+      "source_sha256": "93213b8e979f67d0319e642b60afc21cfef90fb0241f8f70e98063c356521b58",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/pipelines/flux2_image.py": {
+      "sha256": "f4601c5b02d265337362e6132a1a9c7480ff4315081a4d20593432b19be3ca21",
+      "source_sha256": "f4601c5b02d265337362e6132a1a9c7480ff4315081a4d20593432b19be3ca21",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/pipelines/flux_image.py": {
+      "sha256": "f4e98c15447ad857fbc9b007abc84323b9f1dd78dcc01b7a411d72d95461dc8a",
+      "source_sha256": "f4e98c15447ad857fbc9b007abc84323b9f1dd78dcc01b7a411d72d95461dc8a",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/pipelines/jointcontrol_utils.py": {
+      "sha256": "d41031b0a457db49528d39dd59e5a7f25f1240175923837272a31126996ab8a1",
+      "source_sha256": "10e66f1239b16690d62526552fb5de2cf45060208d6081541a1972003a5ca0c0",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/pipelines/plucker_utils.py": {
+      "sha256": "75091c9dff14a8b982ee8a536e7d7fd6bb6c242c176dc7f884f53b49975358dd",
+      "source_sha256": "c0857285173622bf6a7006172a129694127185027c8d53ba2aaee4107bd3d7ae",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/pipelines/qwen_image.py": {
+      "sha256": "1f2d9e6b4afd053678679f1612fc4077f2bce86bb653c175ed9dff67875c884e",
+      "source_sha256": "1f2d9e6b4afd053678679f1612fc4077f2bce86bb653c175ed9dff67875c884e",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/pipelines/wan_video.py": {
+      "sha256": "1add3b5d54b110ffb5d87ed3d8ded322b8c89ac15b3668ccd99c3e864287950b",
+      "source_sha256": "dfe5fc1fedc5e465599cf6fa0311182d6d18ba52f70f6674777dbdee6c280ccc",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/pipelines/z_image.py": {
+      "sha256": "e62f785029efc18c0af5b84adb97bebf65d58fb26b8ebc4813f39455ab8a81e5",
+      "source_sha256": "e62f785029efc18c0af5b84adb97bebf65d58fb26b8ebc4813f39455ab8a81e5",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/controlnet/__init__.py": {
+      "sha256": "b13bf723a8ddad5dfb57cf9ddd195d41ee72b9fd9cd0929740335051597b1b6f",
+      "source_sha256": "b13bf723a8ddad5dfb57cf9ddd195d41ee72b9fd9cd0929740335051597b1b6f",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/controlnet/annotator.py": {
+      "sha256": "3a70316a93113f374185fc465b1b48e95ac47d8907ecafe1769ca3dc155c3ded",
+      "source_sha256": "3a70316a93113f374185fc465b1b48e95ac47d8907ecafe1769ca3dc155c3ded",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/controlnet/controlnet_input.py": {
+      "sha256": "28d97cdcaf6aed521a56e5d1a570d1d1ab6171ce38d18ad53e411cb4269eea62",
+      "source_sha256": "28d97cdcaf6aed521a56e5d1a570d1d1ab6171ce38d18ad53e411cb4269eea62",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/data/__init__.py": {
+      "sha256": "c8769b68a009be78f9adeabf869e36d2aa835f3b94fe01a833eb2d5c5d830f10",
+      "source_sha256": "86eeff481efced7316af1ecdc9fdef19f329e17df1b4760636d859c365e5c929",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/utils/extend_model_dim.py": {
+      "sha256": "1ce5fa7c09ef965fe64c8d55ebacfe48f67a6e20b29e5690eb8fc85200ad7ef6",
+      "source_sha256": "46005d1a154bf011ed079658eabd2b27963b2c485a8259cb501d207282cca8ac",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "diffsynth/utils/lora/__init__.py": {
+      "sha256": "ad93fc1668f31d2230f409307db5ea39f3ae2617cc7d371a1e852fcae28737d9",
+      "source_sha256": "ad93fc1668f31d2230f409307db5ea39f3ae2617cc7d371a1e852fcae28737d9",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/lora/flux.py": {
+      "sha256": "81ab2f7b581cf7f8baaa76ed445e1876424ca3dfde6179ae5cddbccab0a4da40",
+      "source_sha256": "81ab2f7b581cf7f8baaa76ed445e1876424ca3dfde6179ae5cddbccab0a4da40",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/lora/general.py": {
+      "sha256": "8fc0cc07a7730eadbdd787df68cce6ae9468169f6306030337db1ffd5bf41f19",
+      "source_sha256": "8fc0cc07a7730eadbdd787df68cce6ae9468169f6306030337db1ffd5bf41f19",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/lora/merge.py": {
+      "sha256": "85963271f8ee6a39cb900cfca2a195642292715369139d0906d56f55780ea8c2",
+      "source_sha256": "85963271f8ee6a39cb900cfca2a195642292715369139d0906d56f55780ea8c2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/lora/reset_rank.py": {
+      "sha256": "80e847b97ba9aa55f08e5452645d9119b6f22d4497947fc76f107a3c98a44736",
+      "source_sha256": "80e847b97ba9aa55f08e5452645d9119b6f22d4497947fc76f107a3c98a44736",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux2_text_encoder.py": {
+      "sha256": "b53011f1fca4b6c7a8283ebaea44715652ab97fc976a31fc8abde6f642f04ee4",
+      "source_sha256": "b53011f1fca4b6c7a8283ebaea44715652ab97fc976a31fc8abde6f642f04ee4",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_controlnet.py": {
+      "sha256": "9ed9d124a8fba07a2d65a8245c30c52bbfdceba983f436e66b1e438552039632",
+      "source_sha256": "9ed9d124a8fba07a2d65a8245c30c52bbfdceba983f436e66b1e438552039632",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_dit.py": {
+      "sha256": "6ced1b6170dea9f7ef8f9d16aeb51430d31190d57c99e82dc9023f259ee5fdd2",
+      "source_sha256": "6ced1b6170dea9f7ef8f9d16aeb51430d31190d57c99e82dc9023f259ee5fdd2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_infiniteyou.py": {
+      "sha256": "1c840b7b41779767590450a0c0c8a22b7cfda03905dc5f02b9bcfebd2de83f18",
+      "source_sha256": "1c840b7b41779767590450a0c0c8a22b7cfda03905dc5f02b9bcfebd2de83f18",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_ipadapter.py": {
+      "sha256": "46fd5fea2ef79caa1d78fb7baaba7d6f52025e84df2dc0f0927bd7fd3d446cd0",
+      "source_sha256": "46fd5fea2ef79caa1d78fb7baaba7d6f52025e84df2dc0f0927bd7fd3d446cd0",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_text_encoder_clip.py": {
+      "sha256": "04b93ea83d8810874062f0d3d593a4b9afad1b5b401570e65d37ea0ef6f93a6d",
+      "source_sha256": "04b93ea83d8810874062f0d3d593a4b9afad1b5b401570e65d37ea0ef6f93a6d",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_text_encoder_t5.py": {
+      "sha256": "21f9d4b2cd268362440ac6109c447fffb233e2e68b62841f562e1788d4545d1d",
+      "source_sha256": "21f9d4b2cd268362440ac6109c447fffb233e2e68b62841f562e1788d4545d1d",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/flux_vae.py": {
+      "sha256": "844f90365855648b08863f0267e4d0080e216047e797bc59ed0466e598ac8c95",
+      "source_sha256": "844f90365855648b08863f0267e4d0080e216047e797bc59ed0466e598ac8c95",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/nexus_gen.py": {
+      "sha256": "0e9ac3f7c5d1998634b3cefee7be55d38343009819e62d616648fb60d3c18d3e",
+      "source_sha256": "0e9ac3f7c5d1998634b3cefee7be55d38343009819e62d616648fb60d3c18d3e",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/nexus_gen_projector.py": {
+      "sha256": "c47786ddf6c2b3a40169c85fbaf7657a5049693b435515d53487bd220b72f0b1",
+      "source_sha256": "c47786ddf6c2b3a40169c85fbaf7657a5049693b435515d53487bd220b72f0b1",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/qwen_image_text_encoder.py": {
+      "sha256": "bd2a8ad07fb92b3febfc37b431387e4ee8be486a11534612dc1c154c9f718935",
+      "source_sha256": "bd2a8ad07fb92b3febfc37b431387e4ee8be486a11534612dc1c154c9f718935",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/step1x_connector.py": {
+      "sha256": "d76546ed6b8dc901348e4125a62905933eb4a825577ce0a0b401caeed7fe6a0d",
+      "source_sha256": "d76546ed6b8dc901348e4125a62905933eb4a825577ce0a0b401caeed7fe6a0d",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_animate_adapter.py": {
+      "sha256": "fea072411d46e28cafb16947464adcdbe237b857a1dfc726480234d43301d289",
+      "source_sha256": "fea072411d46e28cafb16947464adcdbe237b857a1dfc726480234d43301d289",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_dit.py": {
+      "sha256": "992dfbb368b2e850aaadb346a857ce7593d85d4fc0fbf66b3f68f1bfddd1b61a",
+      "source_sha256": "992dfbb368b2e850aaadb346a857ce7593d85d4fc0fbf66b3f68f1bfddd1b61a",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_image_encoder.py": {
+      "sha256": "cce0bd4d5123488240c5e941dfeb96dc604fccfffd12b5d41837204856d05438",
+      "source_sha256": "cce0bd4d5123488240c5e941dfeb96dc604fccfffd12b5d41837204856d05438",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_mot.py": {
+      "sha256": "91af82cc6455cc283bdfd420fa56388c65ac83ef6f69979904ba387c528b2b58",
+      "source_sha256": "91af82cc6455cc283bdfd420fa56388c65ac83ef6f69979904ba387c528b2b58",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_vace.py": {
+      "sha256": "cc6c39d6e2b16819c341ea76dff680bea11d16817e353229344f6fb98e2e30ca",
+      "source_sha256": "cc6c39d6e2b16819c341ea76dff680bea11d16817e353229344f6fb98e2e30ca",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wan_video_vae.py": {
+      "sha256": "3b1b98e5a06c984455bbde6560abb09cd79cc4d4403b79805835637eced472df",
+      "source_sha256": "3b1b98e5a06c984455bbde6560abb09cd79cc4d4403b79805835637eced472df",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/state_dict_converters/wans2v_audio_encoder.py": {
+      "sha256": "813cdf1f84b77fbc9538760ae55c7efdc366cd8788c4d27c1c654d44ed37aa91",
+      "source_sha256": "813cdf1f84b77fbc9538760ae55c7efdc366cd8788c4d27c1c654d44ed37aa91",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/xfuser/__init__.py": {
+      "sha256": "df04a4d2a89609a19703f658a77753f183cdda3f580a42ef79df27724c666b46",
+      "source_sha256": "df04a4d2a89609a19703f658a77753f183cdda3f580a42ef79df27724c666b46",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "diffsynth/utils/xfuser/xdit_context_parallel.py": {
+      "sha256": "dd6b0db4a5613028196dba5c563eebc1a77818cf4a00f73632167c6c40d098d2",
+      "source_sha256": "dd6b0db4a5613028196dba5c563eebc1a77818cf4a00f73632167c6c40d098d2",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": false
+    },
+    "examples/wanvideo/model_training/train.py": {
+      "sha256": "55c481258bced1eeffe0d67aa1e7c9865383ef022ad24e54b2889f180995e8e5",
+      "source_sha256": "96c8765d0869ce96d6ddda0f34309505cccb6b268c019fa74330be4cbe7cb98a",
+      "source_changed_from_upstream": true,
+      "release_changed_from_source": true
+    },
+    "pyproject.toml": {
+      "sha256": "e6ac22db44553d598ab74c3698d306e517dd495014a94ee31bb2840aefcfaa40",
+      "source_sha256": "ac5217973cee537d0dadd69d3486313d72b73122bc10e430512628ca1d03dbd8",
+      "source_changed_from_upstream": false,
+      "release_changed_from_source": true
+    }
+  }
+}

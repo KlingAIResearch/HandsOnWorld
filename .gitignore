@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+/weights/
+/models/
+/checkpoints/
+/outputs/
+/data/
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+.env
+/.local/
+
+# Local validation suite; excluded from the public repository.
+/tests/
+

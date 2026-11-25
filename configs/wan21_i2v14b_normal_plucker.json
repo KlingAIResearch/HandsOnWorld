@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "representation": "normal_plucker",
+  "backend_root": "../third_party/DiffSynth-Studio",
+  "hand_mesh_faces_path": "../assets/hand_mesh_faces.txt",
+  "control": {
+    "in_dim": 48,
+    "attr_space": "world",
+    "channel_order": [
+      "hand_plucker_world",
+      "camera_plucker"
+    ]
+  },
+  "models": {
+    "text_encoder": "../models/Wan2.1-I2V-14B-480P/models_t5_umt5-xxl-enc-bf16.pth",
+    "tokenizer": "../models/Wan2.1-I2V-14B-480P/google/umt5-xxl",
+    "vae": "../models/Wan2.1-I2V-14B-480P/Wan2.1_VAE.pth",
+    "single": {
+      "source_shards": [
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00001-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00002-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00003-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00004-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00005-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00006-of-00007.safetensors",
+        "../models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00007-of-00007.safetensors"
+      ],
+      "adapter": "../models/initialized/wan21_i2v14b/single.safetensors",
+      "min_timestep_boundary": 0.0,
+      "max_timestep_boundary": 1.0
+    },
+    "image_encoder": "../models/Wan2.1-I2V-14B-480P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth"
+  },
+  "data": {
+    "metadata": "../examples/egovid/train.csv"
+  },
+  "training": {
+    "output_root": "../outputs/wan21_i2v14b/normal_plucker",
+    "height": 480,
+    "width": 640,
+    "num_frames": 81,
+    "learning_rate": 0.0001,
+    "num_epochs": 2,
+    "dataset_num_workers": 16,
+    "lora_rank": 32,
+    "use_gradient_checkpointing": true,
+    "release_cache_before_backward": true
+  },
+  "inference": {
+    "video": "../examples/egovid/annotations/video.mp4",
+    "cam_pose": "../examples/egovid/annotations/cam_pose.npy",
+    "hand_pose": "../examples/egovid/annotations/hand_pose.npy",
+    "camera_intrinsics": "../examples/egovid/annotations/camera_intrinsics.npy",
+    "prompt": "A first-person view of hands interacting with an object.",
+    "negative_prompt": "",
+    "output": "../outputs/wan21_i2v14b/normal_plucker/sample.mp4",
+    "original_width": 720,
+    "original_height": 540,
+    "height": 480,
+    "width": 640,
+    "num_frames": 81,
+    "seed": 0,
+    "cfg_scale": [
+      1.0,
+      2.0
+    ],
+    "fps": 15,
+    "tiled": true,
+    "device": "cuda",
+    "checkpoint": "../checkpoints/sft/wan21_i2v14b/normal_plucker/single.safetensors",
+    "metadata": "../examples/egovid/train.csv",
+    "output_dir": "../outputs/wan21_i2v14b/normal_plucker/eval",
+    "output_layout": "flat",
+    "comparison": false
+  },
+  "model_type": "wan2.1-i2v-14b-480p"
+}

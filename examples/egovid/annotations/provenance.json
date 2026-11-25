@@ -1,0 +1,11 @@
+{
+  "estimator": "handsonworld.data.hawor_runner.HaWoREstimator",
+  "beta_mode": "chunk_shared",
+  "device": "cuda",
+  "fit_iterations": 500,
+  "fit_learning_rate": 0.05,
+  "estimator_config": {},
+  "sampling": "chunk_first",
+  "min_pass_ratio": 0.9,
+  "min_num_frames": 81
+}
